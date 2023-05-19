@@ -107,3 +107,15 @@ void traverse() {
 }
 
 void searchData() {
+	if (listEmpty()) {
+		cout << "List kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
+		int nim;
+		cout << "Masukkan NIM: ";
+		cin >> nim;
+		Node* currentNode = START;
+
